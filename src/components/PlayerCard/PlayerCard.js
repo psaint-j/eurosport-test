@@ -43,7 +43,7 @@ const PlayerCard = ({ player }) => {
   return (
     <Wrapper>
       <Wrapper.Picture><img src={player.picture} alt=""/></Wrapper.Picture>
-      <Wrapper.Name>{`${player.firstname} ${player.lastname}`}<Wrapper.Sex>{player.sex === 'M' ? <i class="	fa fa-mars"></i> : <i class="fa fa-venus"></i>}</Wrapper.Sex></Wrapper.Name>
+      <Wrapper.Name>{`${player.firstname} ${player.lastname}`}<Wrapper.Sex>{player.sex === 'M' ? <i className="	fa fa-mars"></i> : <i className="fa fa-venus"></i>}</Wrapper.Sex></Wrapper.Name>
       <Wrapper.Country> {player.country && <img src={player.country.picture} alt=""/> }</Wrapper.Country>
       <PlayerStats data={player.data}/>
     </Wrapper>

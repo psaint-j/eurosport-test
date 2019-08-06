@@ -61,7 +61,7 @@ const PlayerStats = ({ data }) => {
       </Wrapper.Container>
       <Wrapper.Total>
         <LastVictory>
-          Last : {data.last.map((el, key) => el ? <i  key={`LastVictory-${key}`} class="	fa fa-check"></i> : <i key={`LastVictory-${key}`} class="	fa fa-remove"></i>)}
+          Last : {data.last.map((el, key) => el ? <i  key={`LastVictory-${key}`} className="	fa fa-check"></i> : <i key={`LastVictory-${key}`} className="	fa fa-remove"></i>)}
         </LastVictory>
         <span>wins : {data.last.filter(x => x === 1).length}</span>
         <span>losses : {data.last.filter(x => x === 0).length}</span>

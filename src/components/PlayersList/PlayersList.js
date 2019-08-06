@@ -11,7 +11,6 @@ const Wrapper = styled.div`
 
 
 const PlayersList = ({ data, isLoading }) => {
-  console.log(data, isLoading)
 
   if (isLoading)
     return <div>...Loading</div>
