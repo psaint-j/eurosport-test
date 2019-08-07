@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `
 
 
-const PlayersList = ({ data, isLoading }) => {
+export const PlayersList = ({ data, isLoading }) => {
 
   if (isLoading)
     return <div>...Loading</div>
