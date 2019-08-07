@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import styled from 'styled-components'
 
 
@@ -68,6 +69,17 @@ const PlayerStats = ({ data }) => {
       </Wrapper.Total>
     </Wrapper>
   )
+}
+
+PlayerStats.propTypes = {
+  data: PropTypes.shape({
+    rank: PropTypes.number,
+    points: PropTypes.number,
+    weight: PropTypes.number,
+    height: PropTypes.number,
+    age: PropTypes.number,
+    last: PropTypes.array,
+  })
 }
 
 export default PlayerStats

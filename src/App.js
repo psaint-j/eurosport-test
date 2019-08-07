@@ -1,7 +1,7 @@
 import React from 'react';
 import PlayersList from './components/PlayersList'
 
-function App(props) {
+function App() {
   return (
     <div className="App">
       <PlayersList />

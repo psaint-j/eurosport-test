@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import withPlayers from '../hoc/withPlayers'
 import PlayerCard from '../PlayerCard'
 import styled from 'styled-components'
@@ -21,5 +22,12 @@ const PlayersList = ({ data, isLoading }) => {
   )
 }
 
+
+PlayersList.propTypes = {
+  data: PropTypes.shape({
+    players: PropTypes.array,
+  }),
+  isLoading: PropTypes.bool,
+}
 
 export default withPlayers(PlayersList)

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import PlayerStats from '../molecule/PlayerStats'
 import styled from 'styled-components'
 
@@ -49,6 +50,19 @@ const PlayerCard = ({ player }) => {
     </Wrapper>
 
   )
+}
+
+PlayerCard.propTypes = {
+  player: PropTypes.shape({
+    firstname: PropTypes.string,
+    lastname: PropTypes.string,
+    sex: PropTypes.string,
+    country: PropTypes.shape({
+      picture: PropTypes.string,
+      code: PropTypes.string,
+    }),
+    picture: PropTypes.string,
+  })
 }
 
 export default PlayerCard
